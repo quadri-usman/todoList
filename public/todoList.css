@@ -1,0 +1,119 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #a1c998;
+  font-family: "Candal", sans-serif;
+  color: white;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+button, .links, .todo-header input, .todo-header button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto; 
+}
+div.home{
+  padding: 100px;
+  text-align: center;
+}
+.home h2, .todo-container h2 {
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(22, 5, 150, 0.81);
+}
+.home p{
+  font-size: 1.5em;
+  background: white;
+  padding: 10px;
+  width: 48%;
+  margin: 20px auto;
+  color: black;
+}
+.link{
+  text-align: center;
+  margin: 20px auto;
+}
+.links{
+  font-size: 20px;
+  background: rgba(22, 5, 150, 0.81);
+  color: wheat;
+  padding: 12px;
+}
+.todo-container, .todo-header, .todo-list-item form{
+  display: flex;
+  flex-direction: column;
+}
+.todo-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+  background: rgba(244, 240, 240, 0.7);
+  align-items: center;
+}
+.todo {
+  width: 500px;
+}
+.todo-header input {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.todo-header input, .todo-header button, .todo-list-item, .todo-list-item input{
+  padding: 12px;
+  font-size: 16px;
+}
+.todo-header button {
+  width: 100%;
+  color: white;
+  background-color: rgba(22, 5, 150, 0.81);
+}
+.todo-container ul {
+  list-style: none;
+}
+.todo-list-item {
+  margin-top: 12px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  color: black;
+}
+.todo-list-item div{
+  margin-right: 10px;
+}
+.todo-list-item form {
+  width: 100%;
+}
+.todo-list-item input {
+  margin-bottom: 12px;
+}
+.todo-list-item button {
+  width: 100%;
+  background-color: rgb(2, 104, 32);
+}
+.todo-list-item button, .todo-list-item .cancel, .todo-header button{
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+}
+.todo-list-item .cancel {
+  margin: 12px 0;
+  text-align: center;
+  background-color: rgb(223, 43, 43);
+}
+.todo-list-item div {
+  flex-grow: 2;
+}
+.todo-list-item .remove {
+  color: rgb(243, 96, 96);
+  margin: 0 4px 0 12px;  
+}

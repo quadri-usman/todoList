@@ -1,0 +1,26 @@
+@url = "http://localhost:3000/"
+
+GET http://localhost:3000/todo HTTP/1.1;
+######################################
+GET http://localhost:3000/todo/6460d1654da40ed3f5f2dd53
+#####################################
+POST http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+      
+      "title": "Python",
+      "description": "Create a Node.js server using any framework of choice (optional) and appropriate folder structure (routes, controllers, models, etc.)",
+      "status": "Uncompleted"
+}
+######
+PUT http://localhost:3000/todo/6460deec00cd5aac63883064
+Content-Type: application/json
+
+{      
+      "title": "Ruby",
+      "description": "Create a Django server using any framework of choice (optional) and appropriate folder structure (routes, controllers, models, etc.)",
+      "status": "Completed"
+}
+#####
+DELETE http://localhost:3000/todo/6460d1654da40ed3f5f2dd53

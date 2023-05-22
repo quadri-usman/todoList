@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>TodoList | Edit</title>
+  <link rel="stylesheet" href="/static/todoList.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="todo-container">
+    <div class="todo">
+      <ul class="todo-list">
+        <% todoTasks.forEach(details => { %> <% if (details._id == idTask) { %>
+        <li class="todo-list-item">
+          <form action="/edit/<%= details._id %>" method="POST">
+            <input type="text" value="<%= details.title %>" name="title" />
+            <input
+              type="text"
+              value="<%= details.description %>"
+              name="description"
+            />
+            <input type="text" value="<%= details.status %>" name="status" />
+            <button type="submit">Confirm</button>
+            <a href="/find" class="cancel">Cancel</a>
+          </form>
+        </li>
+        <% } else { %> <% } %> <% }) %>
+      </ul>
+    </div>
+  </div>
+</body>
